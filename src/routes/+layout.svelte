@@ -3,6 +3,6 @@
 	import '@fortawesome/fontawesome-free/js/all.min.js';
 </script>
 
-<div class="container mx-auto flex justify-center items-center w-screen h-screen bg-[#f0f2f5]">
+<div class="container mx-auto flex justify-center items-center w-screen h-screen">
 	<slot />
 </div>

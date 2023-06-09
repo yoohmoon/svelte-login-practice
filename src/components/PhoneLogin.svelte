@@ -11,10 +11,11 @@
 	<Input
 		placeholder="Verification Code"
 		mt=""
+		width="true"
 		icon="fa-solid fa-envelope"
 		bind:value={phoneNumber}
 	/>
-	<Button inverse={true} width="2/5">Get Code</Button>
+	<Button inverse={true} width="true">Get Code</Button>
 </div>
 
 <div class="flex items-center justify-between mt-5">

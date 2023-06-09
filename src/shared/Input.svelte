@@ -5,9 +5,10 @@
 	export let icon = 'fa-solid fa-user';
 	export let mt = '5';
 	export let isPassword = false;
+	export let width = false;
 </script>
 
-<div class="relative mt-{mt}">
+<div class="relative mt-{mt} w-{width} {width ? 'w-5-7' : ''} ">
 	<i class="absolute left-2 top-2 {icon}" style="color:#2a96fc" />
 	<input
 		{type}
@@ -20,3 +21,9 @@
 	{/if}
 	<slot />
 </div>
+
+<style>
+	.w-5-7 {
+		width: calc(100% * 5 / 7);
+	}
+</style>
