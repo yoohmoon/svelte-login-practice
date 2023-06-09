@@ -1,28 +1,29 @@
 <script>
 	import Button from '../shared/Button.svelte';
+	import Input from '../shared/Input.svelte';
+
+	let email;
+	let password;
 </script>
 
-<div class="relative">
-	<i class="absolute left-2 top-2 fa-solid fa-user" style="color:#2a96fc" />
-	<input
-		type="text"
-		placeholder="Username"
-		class="w-full p-1 text-gray-700 bg-white border border-gray-300 rounded-sm pl-7 focus:outline-none font-display"
-	/>
-</div>
-<div class="relative mt-5">
-	<i class="absolute left-2 top-2 fa-solid fa-lock" style="color:#2a96fc" />
-	<input
-		type="password"
-		placeholder="Password"
-		class="w-full p-1 text-gray-700 bg-white border border-gray-300 rounded-sm pl-7 focus:outline-none font-display"
-	/>
-	<i class="absolute text-gray-500 translate-y-2 fa-regular fa-eye-slash right-1" />
-</div>
+<Input type="email" placeholder="Email" mt="" bind:value={email} />
+<Input
+	type="password"
+	placeholder="Password"
+	icon="fa-solid fa-lock"
+	mt="5"
+	isPassword="true"
+	bind:value={password}
+/>
+
 <div class="flex items-center justify-between mt-5">
 	<div>
-		<input type="checkbox" id="remember" />
-		<label for="remember" class="cursor-pointer">Remember Me</label>
+		<input
+			type="checkbox"
+			id="remember"
+			class="focus:ring-custom-blue focus:outline-none focus:ring-transparent"
+		/>
+		<label for="remember" class="cursor-pointer select-none">Remember Me</label>
 	</div>
 	<div>
 		<a href="#" class="text-[#2a96fc]">Forgot Password ?</a>

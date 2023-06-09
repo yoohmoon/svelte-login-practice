@@ -4,7 +4,11 @@ export default {
 	darkMode: false,
 	content: [],
 	theme: {
-		extend: {}
+		extend: {
+			colors: {
+				'custom-blue': '#2a96fc'
+			}
+		}
 	},
-	plugins: []
+	plugins: [require('@tailwindcss/forms')]
 };
