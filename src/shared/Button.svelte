@@ -2,10 +2,11 @@
 	export let type = 'primary';
 	export let dimension = false;
 	export let inverse = false;
+	export let width = '';
 </script>
 
 <button
-	class="{type} border-2 py-1 w-full rounded-sm text-white transition-all duration-200"
+	class="{type} border-2 py-1 w-full rounded-sm text-white transition-all duration-200 w-{width}"
 	class:dimension
 	class:inverse
 >

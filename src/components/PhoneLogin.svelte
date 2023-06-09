@@ -1,5 +1,38 @@
 <script>
 	import Button from '../shared/Button.svelte';
+	import Input from '../shared/Input.svelte';
+
+	let phoneNumber;
 </script>
 
-<Button type="primary" dimension="true" inverse={true}>Login</Button>
+<Input placeholder="Phone Number" mt="" icon="fa-solid fa-mobile-screen" bind:value={phoneNumber} />
+<!-- <Input placeholder="Verification Code" mt="5" icon="fa-solid fa-envelope" bind:value={phoneNumber}
+	><button>Get Code</button></Input
+> -->
+<div class="flex justify-between items-center mt-5 gap-2">
+	<Input
+		placeholder="Verification Code"
+		mt=""
+		icon="fa-solid fa-envelope"
+		bind:value={phoneNumber}
+	/>
+	<Button inverse={true} width="2/5">Get Code</Button>
+	<!-- <button class="w-2/5">Get Code</button> -->
+</div>
+
+<div class="flex items-center justify-between mt-5">
+	<div>
+		<input
+			type="checkbox"
+			id="remember"
+			class="focus:ring-custom-blue focus:outline-none focus:ring-transparent"
+		/>
+		<label for="remember" class="cursor-pointer select-none">Remember Me</label>
+	</div>
+	<div>
+		<a href="#" class="text-[#2a96fc]">Forgot Password ?</a>
+	</div>
+</div>
+<div class="mt-5">
+	<Button type="primary" dimension="true" inverse={true}>Login</Button>
+</div>
