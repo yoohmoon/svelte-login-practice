@@ -17,11 +17,11 @@
 	.primary {
 		border-color: #2a96fc;
 		background-color: #2a96fc;
+	}
 
-		&:hover {
-			color: #2a96fc;
-			background-color: transparent;
-		}
+	.primary:hover {
+		color: #2a96fc;
+		background-color: transparent;
 	}
 
 	.dimension {
